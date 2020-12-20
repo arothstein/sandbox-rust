@@ -26,7 +26,7 @@ fn main() {
 
     // iterate over vector with for loop
     let v5 = vec![100, 32, 57];
-    for i in &v {
+    for i in &v5 {
         println!("{}", i);
     }
 
