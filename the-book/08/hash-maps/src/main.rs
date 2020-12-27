@@ -9,16 +9,16 @@ fn main() {
     scores.insert(String::from("Yellow"), 50);
 
     // zip and collect using vector tuples
-    let teams = vec![String::from("Blue"), String::from("Yellow")];
-    let initial_scores = vec![10, 50];
+    // let teams = vec![String::from("Blue"), String::from("Yellow")];
+    // let initial_scores = vec![10, 50];
 
-    let mut scores1: HashMap<_, _> = teams.into_iter().zip(initial_scores.into_iter()).collect();
+    // let mut scores1: HashMap<_, _> = teams.into_iter().zip(initial_scores.into_iter()).collect();
 
     // For owned values like String, the values will be moved into the hash map and the hash map will be the owner of those values.alloc
 
     // We can get a value out of the hash map by providing its key to the get method
-    let team_name = String::from("Blue");
-    let score = scores.get(&team_name);
+    // let team_name = String::from("Blue");
+    // let score = scores.get(&team_name);
 
     // iterate over key/value pair using for loop
     for (key, value) in &scores {
